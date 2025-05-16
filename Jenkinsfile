@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build and Deploy with Docker') {
             steps {
-                sh 'docker-compose -p ecommerce_ci -f docker-compose.ci.yml up -d --build'
+                sh 'docker-compose -p ecommerce_ci -f docker-compose.yml up -d --build'
             }
         }
     }
