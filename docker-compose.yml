@@ -16,7 +16,5 @@ services:
     container_name: ecommerce_ci_frontend
     ports:
       - "5174:5173"
-    volumes:
-      - ./frontend:/app
     depends_on:
       - backend
