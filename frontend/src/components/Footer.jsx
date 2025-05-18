@@ -11,7 +11,7 @@ const Footer = () => {
         <div className="space-y-6 sm:space-y-10">
           <img src={assets.logo} className="w-32 mx-auto sm:mx-0 mb-4" alt="Logo" />
           <p className="text-sm sm:text-base text-gray-400">
-            Elevating your style with exclusive collections. Join us and stay ahead with the best deals and updates.
+            Elevating your style with exclusive collections. Joiin us and stay ahead with the best deals and updates.
           </p>
         </div>
 
