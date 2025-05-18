@@ -1,16 +1,16 @@
 pipeline {
     agent any
 
-    stages {
-        stage('Clean Existing Containers') {
-            steps {
-                echo 'Stopping and removing existing ecommerce_ci containers...'
-                sh '''
-                    docker stop ecommerce_ci_backend ecommerce_ci_frontend || true
-                    docker rm ecommerce_ci_backend ecommerce_ci_frontend || true
-                '''
-            }
-        }
+    stage('Pre-Cleanup') {
+    steps {
+        echo 'Cleaning up old containers and volumes (if any)...'
+        sh '''
+            docker-compose -p $COMPOSE_PROJECT_NAME -f $COMPOSE_FILE down --volumes || true
+            docker system prune -af || true
+            docker volume prune -f || true
+        '''
+    }
+}
 
 
     stages {
