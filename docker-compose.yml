@@ -7,8 +7,6 @@ services:
     container_name: ecommerce_ci_backend
     ports:
       - "3000:4000"
-    volumes:
-      - ./backend:/app
 
   frontend:
     build:
