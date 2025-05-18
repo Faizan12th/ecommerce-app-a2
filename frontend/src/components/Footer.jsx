@@ -9,9 +9,9 @@ const Footer = () => {
       <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-12">
         {/* Left Section - Logo and Description */}
         <div className="space-y-6 sm:space-y-10">
-          <img src={assets.logo} className="w-32 mx-auto sm:mx-0 mb-4" alt="Logo" />
+          <img className="w-32 mx-auto sm:mx-0 mb-4" src={assets.logo}  alt="Logo" />
           <p className="text-sm sm:text-base text-gray-400">
-            Elevating your style with exclusivenhfyrbr collections. Joiin us and stay ahead with the best deals and updates.
+            Elevating your style with exclusivenhfyrbr collections. Joiin ussss andd stay ahead with the best deals and updates.
           </p>
         </div>
 
