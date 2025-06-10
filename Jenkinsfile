@@ -1,4 +1,4 @@
-pipeline {
+epipeline {
     agent any
 
     stages {
@@ -11,8 +11,8 @@ pipeline {
                 sh 'docker rm ecommerce_ci_frontend || true'
 
                 // Stop and remove ecommerce-app-a2_backend_1
-                sh 'docker stop ecommerce-ci_backend || true'
-                sh 'docker rm ecommerce-ci_backend || true'
+                sh 'docker stop ecommerce_ci_backend || true'
+                sh 'docker rm ecommerce_ci_backend || true'
             }
         }
 
