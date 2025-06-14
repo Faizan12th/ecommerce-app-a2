@@ -6,13 +6,13 @@ services:
       context: ./backend
     container_name: ecommerce_ci_backend
     ports:
-      - "3000:4000"
+      - "5000:4000"
 
   frontend:
     build:
       context: ./frontend
     container_name: ecommerce_ci_frontend
     ports:
-      - "5174:5173"
+      - "5175:5173"
     depends_on:
       - backend
