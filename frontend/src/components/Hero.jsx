@@ -15,7 +15,7 @@ const Hero = () => {
                 </div>
 
                 <h1 className="text-4xl lg:text-6xl font-bold leading-tight text-white">
-                    Latest Arrivals
+                    Latest
                 </h1>
 
                 <div className="flex items-center gap-4 mt-2">
